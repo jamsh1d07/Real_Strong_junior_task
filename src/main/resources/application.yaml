@@ -1,0 +1,18 @@
+server:
+  port: 80
+  error:
+    include-message: always
+spring:
+  datasource:
+    username: 'postgres'
+    password: 'unicorn2021'
+    url: 'jdbc:postgresql://localhost:5432/corxona'
+  main:
+    lazy-initialization: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  sql:
+    init:
+      mode: always
